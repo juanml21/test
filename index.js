@@ -7,53 +7,6 @@ client.on("ready", () => {
 });
 
 let prefix = process.env.PREFIX;
-client.on("message", (message) => {
-  if (!message.content.startsWith(prefix) || !message.guild) return;
-  if (message.author.bot) return;
-  const cont = message.content.split(" ").slice(1);
-  const args = cont.join(" ");
-  if (message.content.startsWith(prefix + "info")) {
-    message.reply({
-      embed: {
-        description: `# Hola Malditos Mancos
-        |Comandos|
-        |----------------|
-        |inop|
-        |cora|
-        |pedra|
-        |urss|
-        |mwif|
-        |mnov|
-        |gfrc|
-        |pats|
-        |skinner|
-        |kpi|
-        |btss|
-        |t18v|
-        |tchk|
-        |typc|
-        |cpetr|
-        |mcap|
-        |lmzn|
-        |ldtv|
-        |lmch|
-        |cnpi|
-        |lcal|
-        |peng|
-        |fcpe|
-        |fcata|
-        |fcura|
-        |flive|
-        |fpoli|
-        |rcop|
-        |ridc|
-        |rnhp|
-        |rrgr|
-        |rrej|
-        |rwrl|`,
-      },
-    });
-  }
   if (message.content.startsWith(prefix + "inop")) {
     // Checking if the message author is in a voice channel.
     if (!message.member.voice.channel)
