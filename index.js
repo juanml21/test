@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 client.on("ready", () => {
-  client.user.setActivity("As Real as It Gets", { type: "WATCHING" });
+  client.user.setActivity("Como se arma un mierdero", { type: "WATCHING" });
   console.log("Listo!");
 });
 
